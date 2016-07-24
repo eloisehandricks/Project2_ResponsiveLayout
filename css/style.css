@@ -37,6 +37,7 @@ h4 {
 
 p {
   margin: 0;
+  font-size: 0.9em;
 }
 
 
@@ -51,7 +52,7 @@ h2,
 h3, 
 h4, 
 h5 { 
-  font-family: FilmotypeHoney, Verdana, Arial;
+  font-family: 'FilmotypeHoney';
   font-weight: normal; 
   font-style: normal; 
 }
@@ -134,14 +135,14 @@ a:active {
 }
 
 .contact-footer li span{
-  font-family: FilmotypeHoney, Verdana, Arial;
+  font-family: 'FilmotypeHoney', Verdana, Arial;
   font-size: 2em;
   color: #000000;
   padding: 0;
 }
 
 .FilmotypeHoney { 
-  font-family: FilmotypeHoney, Verdana, Arial;
+  font-family: 'FilmotypeHoney';
   font-weight: normal;
   font-style: normal;
 }
@@ -192,6 +193,17 @@ hr {
   color: #ffffff;
 }
 
+.main-nav li {
+  background-color: rgba(255, 102, 68, .5);
+  border-radius: 5px;
+}
+
+.not-on-mobile {
+  display: none;
+}
+
+/* Floated Columns ------------------ */
+
 .first {
   float: left;
   text-align: left;
@@ -203,9 +215,6 @@ hr {
   text-align: right;
   padding: 0.5em 0 0 2em;
 }
-
-/* Floated Columns ------------------ */
-
 
 
 /* Float Clearfix ------------------ */
@@ -302,6 +311,15 @@ hr {
     display: none;
   }
 
+  .main-nav li {
+    background: none;
+    border: none;
+  }
+
+  .not-on-mobile {
+    display: block;
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -361,14 +379,7 @@ hr {
 
 @media (max-width: 768px) {
 
-  .main-nav li {
-    background-color: rgba(255, 102, 68, .5);
-    border-radius: 5px;
-  }
-
-  .not-on-mobile {
-    display: none;
-  }
+  
 
 }
 
